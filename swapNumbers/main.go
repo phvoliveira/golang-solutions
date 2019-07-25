@@ -14,7 +14,7 @@ func main() {
 		loopValue := int(numbers[idx])
 
 		if value%loopValue == 0 {
-			num := value / loopValue
+			num := value - loopValue
 			if auxMap[num] {
 				output = append(output, []int{num, loopValue})
 			}
